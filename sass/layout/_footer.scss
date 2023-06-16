@@ -1,0 +1,19 @@
+.footer {
+    grid-area: footer;
+    background-color: #2125292c;
+
+    .nav-item {
+        .nav-link {
+            line-height: 3;
+        }
+    }
+}
+
+
+@media(min-width:992px) {
+
+    .footer {
+        display: none;
+    }
+
+}

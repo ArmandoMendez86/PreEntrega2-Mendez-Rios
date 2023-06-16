@@ -1,0 +1,99 @@
+.main__3,
+.main {
+    background-color: #111418;
+    margin: 0;
+
+    .card {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "card__1"
+            "card__2"
+            "card__3"
+            "card__4";
+        row-gap: 1rem;
+        justify-items: center;
+        background-color: transparent;
+        border: none;
+
+        @keyframes card__item {
+            0% {
+                background-position: 0% 0%;
+            }
+
+            50% {
+                background-position: 50% 50%;
+            }
+
+            100% {
+                background-position: 100% 100%;
+            }
+        }
+
+        .card__item {
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(124, 119, 119, 0.6), rgba(0, 0, 0, 0.3));
+            background-size: 600% 600%;
+            animation: card__item 8s infinite linear;
+        }
+
+        .card__item {
+            width: 90%;
+            border-radius: .5rem;
+            padding: .5rem;
+
+        }
+
+        .card__item:hover {
+            transform: scale(1.1);
+            transition: .2s transform;
+        }
+
+        .card__item:hover span {
+            width: .5rem;
+            background-color: $resaltado;
+            transition: .2s;
+            transition-property: width height;
+        }
+
+        .card__item span {
+            display: block;
+            width: 1.5rem;
+            height: .5rem;
+            background-color: #dc3545;
+            border-radius: 1rem;
+        }
+
+        .card__item h3 {
+            text-align: center;
+            font-size: small;
+            color: $resaltado;
+        }
+
+        .card__item p {
+            font-size: x-small;
+            text-align: center;
+        }
+
+        .card__item--1 {
+            grid-area: card__1;
+        }
+
+        .card__item--2 {
+            grid-area: card__2;
+        }
+
+        .card__item--3 {
+            grid-area: card__3;
+        }
+
+        .card__item--4 {
+            grid-area: card__4;
+        }
+
+    }
+
+}
+
+
+

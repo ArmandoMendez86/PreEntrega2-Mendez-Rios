@@ -1,0 +1,28 @@
+.main__5 {
+    background-color: #111418;
+    margin: 0;
+
+    table {
+        width: 90%;
+
+        tbody td {
+            font-size: small;
+            border: none;
+            color: #ffffffa8;
+
+            a {
+
+                color: #ffffffa8;
+                text-decoration: none;
+            }
+        }
+
+        thead {
+            color: $resaltado;
+        }
+    }
+}
+
+
+
+

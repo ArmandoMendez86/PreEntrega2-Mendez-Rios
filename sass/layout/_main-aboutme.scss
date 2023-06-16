@@ -1,0 +1,64 @@
+.main__2,
+.main {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    background-color: #111418;
+    margin: 0;
+
+
+    .main__2__span {
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #ffffff23;
+        font-size: 4rem;
+        font-weight: bold;
+
+    }
+
+    .main__2__h2 {
+        position: absolute;
+        top: 90px;
+        left: 50%;
+        transform: translateX(-50%);
+        letter-spacing: 4px;
+
+    }
+
+    .main__2__h2 {
+        span {
+            border-bottom: .3rem solid $resaltado;
+        }
+    }
+
+    .main__2__p__sub {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0;
+        margin-top: 5rem;
+    }
+
+    .main__2__p__sub {
+        span {
+            color: $resaltado;
+        }
+    }
+
+    .main__2__msg {
+        margin: 0;
+    }
+
+    .main__2__datos {
+        align-self: flex-start;
+        width: 100%;
+    }
+
+
+}
+
+
